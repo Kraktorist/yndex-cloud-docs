@@ -64,7 +64,7 @@ Ingress-контроллер {{ alb-name }} поставляется в виде
 export HELM_EXPERIMENTAL_OCI=1
 helm pull \
   --version v{{ alb-ingress-version }} \
-  oci://{{ registry }}/yc/yc-alb-ingress-controller-chart
+  oci://{{ registry }}/yc-marketplace/yandex-cloud/yc-alb-ingress/yc-alb-ingress-controller-chart
 helm install \
   --namespace <имя пространства имен> \
   --set folderId=<идентификатор каталога> \
