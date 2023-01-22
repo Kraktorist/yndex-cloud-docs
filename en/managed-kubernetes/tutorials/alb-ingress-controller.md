@@ -62,7 +62,7 @@ To install a [Helm chart](https://helm.sh/docs/topics/charts/) with the [Ingress
 ```bash
 export HELM_EXPERIMENTAL_OCI=1 && \
 cat sa-key.json | helm registry login {{ registry }} --username 'json_key' --password-stdin && \
-helm pull oci://{{ registry }}/yc/yc-alb-ingress-controller-chart \
+helm pull oci://{{ registry }}/yc-marketplace/yc-alb-ingress-controller-chart \
   --version=v{{ alb-ingress-version }} \
   --untar && \
 helm install \
